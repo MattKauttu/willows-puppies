@@ -1,30 +1,59 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <div v-if="shouldShowBackLink" class="back-link">
+      <router-link :to="backLinkRoute">← Back</router-link>
+    </div>
+    <ThemeToggle />
+    <router-view />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
+<script setup>
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+import ThemeToggle from './components/ThemeToggle.vue';
+
+const route = useRoute();
+
+const shouldShowBackLink = computed(() => {
+  return route.path !== '/';
+});
+
+const backLinkRoute = computed(() => {
+  if (route.path.startsWith('/puppy/')) return '/';
+  return null;
+});
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+#app {
+  position: relative;
+  min-height: 100vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.theme-toggle {
+  z-index: 1000; /* Ensure these are above other content */
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.back-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+  z-index: 1000; /* Ensure it stays above other content */
 }
 </style>

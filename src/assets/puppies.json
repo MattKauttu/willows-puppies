@@ -1,0 +1,107 @@
+[
+    {
+      "id": 1,
+      "name": "Roxy",
+      "bio": "The oldest and the only girl.",
+      "gender": "female",
+      "image": "/images/Roxy/week1/1.png",
+      "gallery": {
+        "week1": [
+          "/images/Roxy/week1/1.png",
+          "/images/Roxy/week1/2.png",
+          "/images/Roxy/week1/3.png",
+          "/images/Roxy/week1/4.png",
+          "/images/Roxy/week1/5.png"
+        ]
+      },
+      "growthChart": [
+        {"date": "2024-08-01", "weight": 40},
+        {"date": "2024-08-08", "weight": 45}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bruzer",
+      "bio": "The second oldest and the biggest of them all.",
+      "gender": "male",
+      "image": "/images/Bruzer/week1/3.png",
+      "gallery": {
+        "week1": [
+          "/images/Bruzer/week1/1.png",
+          "/images/Bruzer/week1/2.png",
+          "/images/Bruzer/week1/3.png",
+          "/images/Bruzer/week1/4.png",
+          "/images/Bruzer/week1/5.png",
+          "/images/Bruzer/week1/6.png"
+        ]
+      },
+      "growthChart": [
+        {"date": "2024-08-01", "weight": 42},
+        {"date": "2024-08-08", "weight": 47}
+      ]
+    },
+    {
+        "id": 3,
+        "name": "Rowan",
+        "bio": "The sweet and gentle runt of the litter. Trying his hardest to grow big and strong.",
+        "gender": "male",
+        "image": "/images/Rowan/week1/3.png",
+        "gallery": {
+          "week1": [
+            "/images/Rowan/week1/1.png",
+            "/images/Rowan/week1/2.png",
+            "/images/Rowan/week1/3.png",
+            "/images/Rowan/week1/4.png"
+          ]
+        },
+        "growthChart": [
+          {"date": "2024-08-01", "weight": 42},
+          {"date": "2024-08-08", "weight": 47}
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Onyx",
+        "bio": "One of the most friendly and outgoing of the newborn pups.",
+        "gender": "male",
+        "image": "/images/Onyx/week1/5.png",
+        "gallery": {
+          "week1": [
+            "/images/Onyx/week1/1.png",
+            "/images/Onyx/week1/2.png",
+            "/images/Onyx/week1/3.png",
+            "/images/Onyx/week1/4.png",
+            "/images/Onyx/week1/5.png"
+          ]
+        },
+        "growthChart": [
+          {"date": "2024-08-01", "weight": 42},
+          {"date": "2024-08-08", "weight": 47}
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Grayson",
+        "bio": "Competing with Bruzer to be the largest and competing with Onyx to be the most outgoing.",
+        "gender": "male",
+        "image": "/images/Grayson/week1/6.png",
+        "gallery": {
+          "week1": [
+            "/images/Grayson/week1/1.png",
+            "/images/Grayson/week1/2.png",
+            "/images/Grayson/week1/3.png",
+            "/images/Grayson/week1/4.png",
+            "/images/Grayson/week1/5.png",
+            "/images/Grayson/week1/6.png",
+            "/images/Grayson/week1/7.png",
+            "/images/Grayson/week1/8.png",
+            "/images/Grayson/week1/9.png"
+          ]
+        },
+        "growthChart": [
+          {"date": "2024-08-01", "weight": 42},
+          {"date": "2024-08-08", "weight": 47}
+        ]
+      }
+  ]
+  
