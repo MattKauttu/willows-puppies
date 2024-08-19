@@ -13,7 +13,7 @@
     background-color: var(--background-color);
     color: var(--text-color);
     text-align: center;
-    padding: 2px 10px;
+    padding: 10px 10px;
     z-index: 1000;
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
   }
