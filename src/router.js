@@ -8,8 +8,19 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+  history: createWebHistory('/willows-puppies/'),
+  routes: [
+    {
+      path: '/',
+      name: 'PuppiesPage',
+      component: PuppiesPage
+    },
+    {
+      path: '/puppy/:id',
+      name: 'PuppyDetailPage',
+      component: PuppyDetailPage
+    }
+  ],
 });
 
 export default router;

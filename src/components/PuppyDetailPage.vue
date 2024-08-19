@@ -1,11 +1,11 @@
 <template>
   <div v-if="puppy" class="puppy-detail-page">
-    <h1 class="header">{{ puppy.name }}'s Details</h1>
+    <h1 class="page-header">{{ puppy.name }}'s Details</h1>
     <p>{{ puppy.bio }}</p>
 
     <h3>Gallery</h3>
     <div v-for="(images, week) in puppy.gallery" :key="week" class="week-section">
-      <h4>{{ week }}</h4>
+      <h4>{{ formatWeek(week) }}</h4>
       <div class="gallery">
         <img v-for="image in images" :src="image" :key="image" class="gallery-image" />
       </div>
@@ -33,6 +33,12 @@ import puppiesData from '../assets/puppies.json'; // Import the JSON file
 
 const route = useRoute();
 const puppy = ref(null);
+
+function formatWeek(week) {
+  return week.replace(/(\D+)(\d+)/, (match, p1, p2) => {
+    return p1.charAt(0).toUpperCase() + p1.slice(1) + " " + p2;
+  });
+}
 
 onMounted(() => {
   console.log('Route ID:', route.params.id);
@@ -86,4 +92,11 @@ onMounted(() => {
   padding: 5px;
   border-bottom: 1px solid #ddd;
 }
+
+.page-header {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  }
 </style>

@@ -1,44 +1,21 @@
 <template>
-  <div id="app">
-    <div v-if="shouldShowBackLink" class="back-link">
-      <router-link :to="backLinkRoute">← Back</router-link>
-    </div>
-    <ThemeToggle />
+  <div>
+    <Header />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-import ThemeToggle from './components/ThemeToggle.vue';
-
-const route = useRoute();
-
-const shouldShowBackLink = computed(() => {
-  return route.path !== '/';
-});
-
-const backLinkRoute = computed(() => {
-  if (route.path.startsWith('/puppy/')) return '/';
-  return null;
-});
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 </script>
+
 
 <style scoped>
 #app {
   position: relative;
   min-height: 100vh;
-}
-
-.theme-toggle {
-  z-index: 1000; /* Ensure these are above other content */
-}
-
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
 }
 
 button {

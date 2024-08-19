@@ -1,118 +1,89 @@
 <template>
   <div class="puppies-page">
-    <h1 class="header">The Puppies</h1>
-    <div class="puppy-card-container">
-      <router-link
-        v-for="puppy in puppies"
-        :key="puppy.id"
-        :to="`/puppy/${puppy.id}`"
-        class="puppy-card-link"
-      >
-        <div
-          class="puppy-card"
-          :class="puppy.gender === 'male' ? 'male' : 'female'"
-        >
-          <img :src="puppy.image" :alt="puppy.name" />
-          <h3>{{ puppy.name }}</h3>
-        </div>
-      </router-link>
-    </div>
+    <router-link
+      v-for="puppy in puppies"
+      :key="puppy.id"
+      :to="{ name: 'PuppyDetailPage', params: { id: puppy.id } }"
+      class="puppy-card"
+      :class="puppy.gender === 'male' ? 'male' : 'female'"
+    >
+      <img :src="puppy.image" :alt="puppy.name" class="puppy-thumbnail" />
+      <div class="puppy-info">
+        <h2>{{ puppy.name }}</h2>
+      </div>
+    </router-link>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import puppiesData from '../assets/puppies.json'; // Import the JSON file
+import { ref } from 'vue';
+import puppiesData from '../assets/puppies.json';
 
-const puppies = ref([]);
-
-onMounted(() => {
-  // Load data from JSON
-  puppies.value = puppiesData;
-});
+const puppies = ref(puppiesData);
 </script>
 
 <style scoped>
 .puppies-page {
   display: flex;
-  flex-direction: column;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  padding: 20px;
-}
-
-.puppy-card-link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .puppy-card {
-  height: 300px; /* Set a uniform height */
+  width: 250px; /* Adjusted width */
+  height: 300px; /* Set fixed height */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none; /* Remove underline from links */
+  overflow: hidden;
+  position: relative;
+}
+
+.puppy-thumbnail {
+  width: 100%;
+  height: 250px; /* Fixed height for images */
+  object-fit: cover; /* Cover the container without distorting */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.puppy-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: pointer;
-  text-align: center;
-  background-color: var(--background-color-light);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+  flex-grow: 1;
 }
 
-:root[data-theme='dark'] .puppy-card {
-  color: var(--text-color-dark);
+:root[data-theme='dark'] .puppy-info {
+  color: #000000;
+}
+
+.puppy-card h2 {
+  font-size: 1.5rem;
+  margin: 0 0 5px 0;
+}
+
+.puppy-card p {
+  font-size: 1rem;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .puppy-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
 }
 
-.puppy-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.puppy-card h3 {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: var(--text-color-light); /* Matches the global text color */
-}
-
-:root[data-theme='dark'] .puppy-card h3 {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: var(--text-color-light); /* Matches the global text color */
-}
-
-@media (max-width: 768px) {
-  .puppies-page {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    padding: 10px;
-  }
-
-  .puppy-card {
-    padding: 15px;
-  }
-
-  .puppy-card h3 {
-    font-size: 1.2rem;
-  }
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  background-color: #f5f5f5;
-}
-
-h2 {
-  color: #444;
-}
-
-h3 {
-  color: #666;
+.puppy-card:active {
+  transform: translateY(0);
 }
 
 .male {
@@ -122,12 +93,4 @@ h3 {
 .female {
   background-color: #ffb6c1;
 }
-
-.puppy-card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  width: 100%;
-}
-
 </style>

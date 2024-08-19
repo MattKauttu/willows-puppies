@@ -1,7 +1,7 @@
 <template>
-    <div class="theme-toggle">
-      <button @click="toggleTheme">
-        {{ currentTheme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode' }}
+    <div>
+      <button @click="toggleTheme" class="nowrap">
+        <span>{{ currentTheme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode' }}</span>
       </button>
     </div>
   </template>
@@ -32,11 +32,6 @@
   </script>
   
   <style scoped>
-  .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
   
   button {
     background: none;
@@ -44,6 +39,10 @@
     font-size: 1rem;
     cursor: pointer;
     color: var(--text-color);
+  }
+
+  .nowrap {
+    text-wrap: nowrap;
   }
   </style>
   
