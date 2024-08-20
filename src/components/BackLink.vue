@@ -1,7 +1,10 @@
 <template>
-    <div v-if="backLinkRoute">
-      <router-link :to="backLinkRoute">← Back</router-link>
-    </div>
+    <router-link
+      v-if="backLinkRoute"
+      :to="backLinkRoute"
+    >
+      <button type="button">← Back</button>
+    </router-link>
   </template>
   
   <script setup>
@@ -17,8 +20,5 @@
   </script>
   
   <style scoped>
-  div {
-    font-size: 1rem;
-  }
   </style>
   
