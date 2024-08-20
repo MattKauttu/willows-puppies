@@ -1,13 +1,39 @@
 <template>
-  <header>
-    <BackLink />
-    <h1>Willow's Puppies</h1>
+  <header class="shadow-md py-4 px-6 flex items-center justify-between">
+    <!-- BackLink Component -->
+    <BackLink class="mr-4" aria-label="Back to previous page" />
+
+    <!-- Site Title or Logo -->
+    <h1 class="font-bold text-lg md:text-2xl lg:text-3xl text-center flex-grow font-dancing-script">
+      <!-- Insert your site title or logo here -->
+      {{ siteTitle }}
+    </h1>
+
+    <!-- ThemeToggle Component -->
+    <ThemeToggle class="ml-4" aria-label="Toggle theme" />
   </header>
 </template>
 
 <script setup>
 import BackLink from './BackLink.vue';
+import ThemeToggle from './ThemeToggle.vue';
+
+// Define the props
+const props = defineProps({
+  siteTitle: {
+    type: String,
+    default: "Willow's Puppies"
+  }
+});
+
 </script>
 
+
 <style scoped>
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.font-dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
 </style>
