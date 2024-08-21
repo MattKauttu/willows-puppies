@@ -1,10 +1,10 @@
 <template>
-  <header class="shadow-md py-4 px-6 flex items-center justify-between">
+  <header class="shadow-md py-4 px-6 flex items-center justify-between text-2xl md:text-3xl lg:text-4xl">
     <!-- BackLink Component -->
     <BackLink class="mr-4" aria-label="Back to previous page" />
 
     <!-- Site Title -->
-    <h1 class="font-bold text-lg md:text-2xl lg:text-3xl text-center flex-grow font-dancing-script">
+    <h1 class="font-bold text-center flex-grow font-dancing-script">
       {{ siteTitle }}
     </h1>
 
