@@ -24,7 +24,3 @@ const backLinkRoute = computed(() => {
   return null;
 });
 </script>
-
-<style scoped>
-/* Add any additional styles here if needed */
-</style>

@@ -7,5 +7,10 @@ export default defineConfig({
   base: '/willows-puppies/',
   css: {
     postcss: './postcss.config.js'
+  },
+  resolve: {
+    alias: {
+      'vue-easy-lightbox$': 'vue-easy-lightbox/dist/external-css/vue-easy-lightbox.esm.min.js'
+    }
   }
 });

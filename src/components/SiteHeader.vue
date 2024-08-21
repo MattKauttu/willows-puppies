@@ -3,9 +3,8 @@
     <!-- BackLink Component -->
     <BackLink class="mr-4" aria-label="Back to previous page" />
 
-    <!-- Site Title or Logo -->
+    <!-- Site Title -->
     <h1 class="font-bold text-lg md:text-2xl lg:text-3xl text-center flex-grow font-dancing-script">
-      <!-- Insert your site title or logo here -->
       {{ siteTitle }}
     </h1>
 
@@ -25,12 +24,9 @@ const props = defineProps({
     default: "Willow's Puppies"
   }
 });
-
 </script>
 
-
 <style scoped>
-/* Import the Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 .font-dancing-script {

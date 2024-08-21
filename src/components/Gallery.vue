@@ -1,51 +1,59 @@
 <template>
   <section>
-    <h3>Gallery</h3>
-    <div v-for="(images, week) in gallery" :key="week" class="week-section">
-      <h4>{{ formatWeek(week) }}</h4>
-      <div class="gallery">
-        <img v-for="image in images" :src="image" :key="image" class="gallery-image" />
+    <h1 class="text-2xl font-bold mb-4">Gallery</h1>
+    <section v-for="(weekImages, week) in images" :key="week" class="mb-8">
+      <h2 class="">{{ formatWeekTitle(week) }}</h2>
+      <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
+        <figure
+          v-for="(item, index) in weekImages"
+          :key="index"
+          class="bg-transparent flex items-center justify-center cursor-pointer aspect-w-1 aspect-h-1"
+        >
+          <img
+            :src="item.thumbnail"
+            :alt="`Thumbnail ${index + 1} for ${week}`"
+            class="object-contain w-full h-full"
+            @click="openLightbox(index, week)"
+          />
+        </figure>
       </div>
-    </div>
+    </section>
+
+    <vue-easy-lightbox
+      :visible="visible"
+      :imgs="currentImages"
+      :index="currentIndex"
+      @hide="closeLightbox"
+    />
   </section>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import VueEasyLightbox from 'vue-easy-lightbox';
 
 const props = defineProps({
-gallery: {
-  type: Object,
-  required: true,
-},
+  images: {
+    type: Object,
+    required: true
+  }
 });
 
-function formatWeek(week) {
-  return week.replace(/(\D+)(\d+)/, (match, p1, p2) => {
-    return p1.charAt(0).toUpperCase() + p1.slice(1) + " " + p2;
-  });
-}
+const visible = ref(false);
+const currentIndex = ref(0);
+const currentImages = ref([]);
+
+const formatWeekTitle = (week) => {
+  return `Week ${week.replace('week', '')}`;
+};
+
+const openLightbox = (index, week) => {
+  currentIndex.value = index;
+  currentImages.value = props.images[week].map(image => image.image);
+  visible.value = true;
+};
+
+const closeLightbox = () => {
+  visible.value = false;
+};
 </script>
-
-<style scoped>
-.week-section {
-  margin-bottom: 20px;
-}
-
-.week-section h4 {
-  margin-bottom: 10px;
-}
-
-.gallery {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.gallery-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-}
-</style>
-  

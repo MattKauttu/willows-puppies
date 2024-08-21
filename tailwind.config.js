@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Quicksand', 'sans-serif']
+      },
+      colors: {
+        male: '#007BFF',
+        female: '#FF69B4'
+      }
+    },
   },
   plugins: [],
 }

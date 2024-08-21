@@ -11,10 +11,3 @@
     </div>
   </footer>
 </template>
-
-<script setup>
-  // JavaScript logic can be added here if necessary
-</script>
-
-<style scoped>
-</style>

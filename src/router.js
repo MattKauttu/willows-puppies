@@ -4,7 +4,7 @@ import PuppyDetailPage from './components/PuppyDetailPage.vue';
 
 const routes = [
   { path: '/', component: PuppiesPage },
-  { path: '/puppy/:id', component: PuppyDetailPage, props: true },
+  { path: '/puppy/:puppyName', component: PuppyDetailPage, props: true },
 ];
 
 const router = createRouter({
@@ -16,7 +16,7 @@ const router = createRouter({
       component: PuppiesPage
     },
     {
-      path: '/puppy/:id',
+      path: '/puppy/:puppyName',
       name: 'PuppyDetailPage',
       component: PuppyDetailPage
     }
