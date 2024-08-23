@@ -19,7 +19,7 @@
             style="max-width: 250px; max-height: 250px;"
           />
           <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold dark:text-white">{{ puppy.name }}</h3>
+            <h3 class="text-lg font-semibold text-black dark:text-black">{{ puppy.name }}</h3>
           </div>
         </div>
       </router-link>
