@@ -1,7 +1,10 @@
 <template>
   <section>
-    <h1 class="text-2xl font-bold mb-4">Gallery</h1>
-    <section v-for="(weekImages, week) in images" :key="week" class="mb-8">
+    <h1 class="text-2xl font-bold">Gallery</h1>
+    <p class="text-lg mt-4">
+        Click an image to view its full-size!
+    </p>
+    <section v-for="(weekImages, week) in images" :key="week" class="mt-4 mb-8">
       <h2 class="">{{ formatWeekTitle(week) }}</h2>
       <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
         <figure

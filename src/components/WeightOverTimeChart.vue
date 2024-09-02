@@ -1,6 +1,9 @@
 <template>
   <section>
-    <h1 class="text-2xl font-bold mb-4">Growth Chart</h1>
+    <h1 class="text-2xl font-bold">Growth Chart</h1>
+    <p class="text-lg mt-4">
+        Hover over a data point to view the exact weight for that day.
+    </p>
     <div :class="containerClass" :style="customStyles">
       <Line :data="chartData" :options="chartOptions" />
     </div>
