@@ -1,145 +1,145 @@
 [
     {
       "id": 1,
-      "name": "Rowan",
+      "name": "Roxy",
       "bio": "The oldest and the only girl.",
       "gender": "female",
-      "image": "/willows-puppies/images/Rowan/thumbnail.png",
+      "image": "/willows-puppies/images/Roxy/thumbnail.png",
       "gallery": {
         "week1": [
           {
-            "thumbnail": "/willows-puppies/images/Rowan/week1/thumbnail_1.png",
-            "image": "/willows-puppies/images/Rowan/week1/1.png"
+            "thumbnail": "/willows-puppies/images/Roxy/week1/thumbnail_1.png",
+            "image": "/willows-puppies/images/Roxy/week1/1.png"
           },
           {
-            "thumbnail": "/willows-puppies/images/Rowan/week1/thumbnail_2.png",
-            "image": "/willows-puppies/images/Rowan/week1/2.png"
+            "thumbnail": "/willows-puppies/images/Roxy/week1/thumbnail_2.png",
+            "image": "/willows-puppies/images/Roxy/week1/2.png"
           },
           {
-            "thumbnail": "/willows-puppies/images/Rowan/week1/thumbnail_3.png",
-            "image": "/willows-puppies/images/Rowan/week1/3.png"
+            "thumbnail": "/willows-puppies/images/Roxy/week1/thumbnail_3.png",
+            "image": "/willows-puppies/images/Roxy/week1/3.png"
           },
           {
-            "thumbnail": "/willows-puppies/images/Rowan/week1/thumbnail_4.png",
-            "image": "/willows-puppies/images/Rowan/week1/4.png"
+            "thumbnail": "/willows-puppies/images/Roxy/week1/thumbnail_4.png",
+            "image": "/willows-puppies/images/Roxy/week1/4.png"
           },
           {
-            "thumbnail": "/willows-puppies/images/Rowan/week1/thumbnail_5.png",
-            "image": "/willows-puppies/images/Rowan/week1/5.png"
+            "thumbnail": "/willows-puppies/images/Roxy/week1/thumbnail_5.png",
+            "image": "/willows-puppies/images/Roxy/week1/5.png"
           }
         ],
         "week2": [
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_1.png",
-              "image": "/willows-puppies/images/Rowan/week2/1.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_1.png",
+              "image": "/willows-puppies/images/Roxy/week2/1.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_2.png",
-              "image": "/willows-puppies/images/Rowan/week2/2.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_2.png",
+              "image": "/willows-puppies/images/Roxy/week2/2.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_3.png",
-              "image": "/willows-puppies/images/Rowan/week2/3.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_3.png",
+              "image": "/willows-puppies/images/Roxy/week2/3.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_4.png",
-              "image": "/willows-puppies/images/Rowan/week2/4.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_4.png",
+              "image": "/willows-puppies/images/Roxy/week2/4.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_5.png",
-              "image": "/willows-puppies/images/Rowan/week2/5.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_5.png",
+              "image": "/willows-puppies/images/Roxy/week2/5.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_6.png",
-              "image": "/willows-puppies/images/Rowan/week2/6.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_6.png",
+              "image": "/willows-puppies/images/Roxy/week2/6.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_7.png",
-              "image": "/willows-puppies/images/Rowan/week2/7.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_7.png",
+              "image": "/willows-puppies/images/Roxy/week2/7.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_8.png",
-              "image": "/willows-puppies/images/Rowan/week2/8.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_8.png",
+              "image": "/willows-puppies/images/Roxy/week2/8.png"
             },
             {
-              "thumbnail": "/willows-puppies/images/Rowan/week2/thumbnail_9.png",
-              "image": "/willows-puppies/images/Rowan/week2/9.png"
+              "thumbnail": "/willows-puppies/images/Roxy/week2/thumbnail_9.png",
+              "image": "/willows-puppies/images/Roxy/week2/9.png"
             }
           ],
           "week3": [
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_1.png",
-                "image": "/willows-puppies/images/Rowan/week3/1.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_1.png",
+                "image": "/willows-puppies/images/Roxy/week3/1.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_2.png",
-                "image": "/willows-puppies/images/Rowan/week3/2.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_2.png",
+                "image": "/willows-puppies/images/Roxy/week3/2.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_3.png",
-                "image": "/willows-puppies/images/Rowan/week3/3.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_3.png",
+                "image": "/willows-puppies/images/Roxy/week3/3.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_4.png",
-                "image": "/willows-puppies/images/Rowan/week3/4.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_4.png",
+                "image": "/willows-puppies/images/Roxy/week3/4.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_5.png",
-                "image": "/willows-puppies/images/Rowan/week3/5.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_5.png",
+                "image": "/willows-puppies/images/Roxy/week3/5.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_6.png",
-                "image": "/willows-puppies/images/Rowan/week3/6.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_6.png",
+                "image": "/willows-puppies/images/Roxy/week3/6.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_7.png",
-                "image": "/willows-puppies/images/Rowan/week3/7.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_7.png",
+                "image": "/willows-puppies/images/Roxy/week3/7.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_8.png",
-                "image": "/willows-puppies/images/Rowan/week3/8.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_8.png",
+                "image": "/willows-puppies/images/Roxy/week3/8.png"
               },
               {
-                "thumbnail": "/willows-puppies/images/Rowan/week3/thumbnail_9.png",
-                "image": "/willows-puppies/images/Rowan/week3/9.png"
+                "thumbnail": "/willows-puppies/images/Roxy/week3/thumbnail_9.png",
+                "image": "/willows-puppies/images/Roxy/week3/9.png"
               }
             ],
             "week4": [
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_1.png",
-                  "image": "/willows-puppies/images/Rowan/week4/1.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_1.png",
+                  "image": "/willows-puppies/images/Roxy/week4/1.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_2.png",
-                  "image": "/willows-puppies/images/Rowan/week4/2.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_2.png",
+                  "image": "/willows-puppies/images/Roxy/week4/2.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_3.png",
-                  "image": "/willows-puppies/images/Rowan/week4/3.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_3.png",
+                  "image": "/willows-puppies/images/Roxy/week4/3.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_4.png",
-                  "image": "/willows-puppies/images/Rowan/week4/4.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_4.png",
+                  "image": "/willows-puppies/images/Roxy/week4/4.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_5.png",
-                  "image": "/willows-puppies/images/Rowan/week4/5.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_5.png",
+                  "image": "/willows-puppies/images/Roxy/week4/5.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_6.png",
-                  "image": "/willows-puppies/images/Rowan/week4/6.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_6.png",
+                  "image": "/willows-puppies/images/Roxy/week4/6.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_7.png",
-                  "image": "/willows-puppies/images/Rowan/week4/7.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_7.png",
+                  "image": "/willows-puppies/images/Roxy/week4/7.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_8.png",
-                  "image": "/willows-puppies/images/Rowan/week4/8.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_8.png",
+                  "image": "/willows-puppies/images/Roxy/week4/8.png"
                 },
                 {
-                  "thumbnail": "/willows-puppies/images/Rowan/week4/thumbnail_9.png",
-                  "image": "/willows-puppies/images/Rowan/week4/9.png"
+                  "thumbnail": "/willows-puppies/images/Roxy/week4/thumbnail_9.png",
+                  "image": "/willows-puppies/images/Roxy/week4/9.png"
                 }
               ]
       },
