@@ -2,11 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 import PuppiesPage from './components/PuppiesPage.vue';
 import PuppyDetailPage from './components/PuppyDetailPage.vue';
 
-const routes = [
-  { path: '/', component: PuppiesPage },
-  { path: '/puppy/:puppyName', component: PuppyDetailPage, props: true },
-];
-
 const router = createRouter({
   history: createWebHistory('/willows-puppies/'),
   routes: [
@@ -18,9 +13,19 @@ const router = createRouter({
     {
       path: '/puppy/:puppyName',
       name: 'PuppyDetailPage',
-      component: PuppyDetailPage
+      component: PuppyDetailPage,
+      props: true
     }
   ],
 });
+
+router.afterEach((to) => {
+  if (typeof gtag !== 'undefined') {
+    gtag('config', 'G-B1WY1BR3FG', {
+      page_path: to.fullPath,
+      page_title: to.name
+    })
+  }
+})
 
 export default router;
